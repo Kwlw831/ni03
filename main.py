@@ -13,6 +13,7 @@ class TenantSettlement(BaseModel):
     transfer_sum_pln: float
     balance_pln: float
 
+
 class Parameters(BaseModel):
     apartments_json_path: str = 'data/apartments.json'
     tenants_json_path: str = 'data/tenants.json'
