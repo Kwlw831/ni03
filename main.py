@@ -131,7 +131,7 @@ if __name__ == '__main__':
         print(f"Apartment location = {apartment.location}")
         print(f"Apartment area m^2 = {apartment.area_m2}")
         for room in apartment.rooms.values():
-            print('  ', room.name, room.area_m2)
+            print(f"{room.name = }, {room.area_m2 = }")
         
         for bill in manager.bills:
             if bill.apartment == apartment.key:
