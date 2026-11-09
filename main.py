@@ -126,7 +126,10 @@ if __name__ == '__main__':
     manager = Manager(parameters)
 
     for apartment in manager.apartments.values():
-        print(f"{apartment.key = }, {apartment.name = }, {apartment.location = }, {apartment.area_m2 = }")
+        print(f"Apartment key = {apartment.key}")
+        print(f"Apartment name = {apartment.name}")
+        print(f"Apartment location = {apartment.location}")
+        print(f"Apartment area m^2 = {apartment.area_m2}")
         for room in apartment.rooms.values():
             print(f"{room.name = }, {room.area_m2 = }")
         
