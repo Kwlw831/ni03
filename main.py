@@ -3,6 +3,16 @@ from typing import Dict, List
 
 import json
 
+class TenantSettlement(BaseModel):
+    tenant_name: str
+    apartment_key: str
+    settlement_year: int
+    settlement_month: int
+    bills_sum_pln: float
+    rents_sum_pln: float
+    transfer_sum_pln: float
+    balance_pln: float
+
 
 class Parameters(BaseModel):
     apartments_json_path: str = 'data/apartments.json'
