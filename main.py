@@ -19,6 +19,8 @@ class ApartmentSettlement(BaseModel):
     rents_sum_pln: float
     to_settle_pln: float
 
+
+
 class Room(BaseModel):
     name: str
     area_m2: float
