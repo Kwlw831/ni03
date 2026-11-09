@@ -21,6 +21,16 @@ class Parameters(BaseModel):
     bills_json_path: str = 'data/bills.json'
 
 
+class ApartmentSettlement(BaseModel):
+    apartment_key: str
+    settlement_year: int
+    settlement_month: int
+    bills_sum_pln: float
+    rents_sum_pln: float
+    to_settle_pln: float
+
+
+
 class Room(BaseModel):
     name: str
     area_m2: float
